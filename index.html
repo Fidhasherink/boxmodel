@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <Style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(235, 160, 188);
+            margin: 0;
+            height: 100vh;
+        }
+        .card{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            gap:10px;
+            max-width: 800px;
+ 
+           
+        }
+        .box{
+            width:250px;
+            height: 200px;
+            border: solid rgb(123, 115, 115);
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 4px rgb(92, 88, 88);
+            background-color: white;
+            border-radius:25px;
+            
+            
+           
+
+        }
+        .icon{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .card-title{
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+         .one{
+            border-top-color: #ff6f61;
+         }  
+         .two{
+            border-top-color: rgb(12, 13, 54);
+         }
+         .three{
+            border-top-color: orange;
+         }
+         .four{
+            border-top-color: lightblue;
+         }
+         .five{
+            border-top-color: yellow;
+         }
+         .six{
+            border-top-color: blue;
+         }
+    </Style>
+</head>
+<body>
+    <div class="card">
+    <div class="box one"> 
+        <div class="icon">📄</div>
+        <br>
+        <div class="card-title">Allowed file type</div>
+        <br>
+         <div class="card-description">Specify file formats that are allowed to upload.</div>
+    </div>
+    <div class="box two" > 
+        <div class="icon">Ⓜ️</div>
+        <br>
+            <div class="card-title">Maximum file size</div>
+            <br>
+            <div class="card-description">Set maximum file size that is allowed to upload.</div>
+    </div>
+    <div class="box three" > 
+        <div class="icon">🔍</div>
+        <br>
+            <div class="card-title">Attachment Visibility</div>
+            <br>
+            <div class="card-description">Display attachments to certain customer groups and store views.</div>
+    </div>
+    <div class="box four"  > 
+        <div class="icon">⬇️</div>
+        <br>
+            <div class="card-title">Download limit</div>
+            <br>
+            <div class="card-description">Limit the number of times an attachment can be downloaded.</div>
+    </div>
+    <div class="box five" > 
+        <div class="icon">🔎</div>
+        <br>
+            <div class="card-title">Product Preview</div>
+            <br>
+            <div class="card-description">Preview products that are assigned to attachment.</div>
+    </div>
+    <div class="box six" >
+        <div class="icon">⚙️</div>
+        <br>
+            <div class="card-title">API support</div>
+            <br>
+            <div class="card-description">Specify file formats that are allowed to upload.</div>
+    
+    </div>
+    </div>
+</body>
+</html>
